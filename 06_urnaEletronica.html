@@ -20,11 +20,62 @@
     */
 
     //Entrada
-
+let voto = 5;
+let Joaozinho = 0;
+let Mariazinha = 0;
+let Nulo = 0;
+let branco = 0;
+let total = 0;
 
     //Processamento
+while (voto != 0) {
+    voto = prompt(`Informe seu voto: 
+    As opções são:
+    1. Candidato Joãozinho
+    2. Candidato Mariazinha
+    3. Nulo
+    4. Branco
+    Entre com o seu voto:`)
+}
 
+if (voto == 1) {
+    Joaozinho++
+    total++
+} 
+else if (voto == 2) {
+    Mariazinha++
+    total++
+} 
+else if (voto == 3) {
+    Nulo++
+    total++
+}
+else if (voto == 4) {
+    branco++
+    total++
+} 
 
+else if (voto == 0){
+    if (Joaozinho > Mariazinha) {
+alert(`Joaozinho: ${Joaozinho} votos. Candidato eleito.
+Mariazinha: ${Mariazinha} votos.
+Nulo: ${total * nulo / 100}%.
+Branco: ${total * branco / 100}%.`)
+}
+
+else if(Joaozinho < Mariazinha){
+alert(`Joãozinho: ${Joaozinho} votos.
+Mariazinha: ${Mariazinha} votos. Candidata eleita.
+Nulo: ${total * nulo / 100}%.
+Branco: ${total * branco / 100}%.`)
+}
+else{
+   alert(`${Joaozinho} votos.
+   ${Mariazinha} votos.
+   Nulo:${total * nulo / 100}%.
+Branco:${branco} ${total * branco / 100}%.Empate`) 
+}
+}
     //Saída
 
 </script>

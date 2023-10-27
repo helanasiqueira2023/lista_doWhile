@@ -6,11 +6,17 @@
     */
 
     //Entrada
-
+let senha = Number(prompt(`Informe uma senha de quatro números inteiros:`)).trim();
+let numInteiro = [2, 4, 6, 8, 10];
 
     //Processamento
-
-
+while ( senha != numInteiro) {
+    alert(`Senha incorreta!`)
+    senha = Number(prompt(`Informe uma senha de quatro números inteiros:`)).trim();
+}
+while (senha == numInteiro) {
+    alert(`Senha correta!`)
+}
     //Saída
 
 </script>

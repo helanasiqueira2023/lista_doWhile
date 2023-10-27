@@ -11,11 +11,33 @@
     */
 
     //Entrada
-
+ let nome = prompt(`Informe seu nome:`).trim();
+ let Idade = Number(prompt(`Informe sua idade:`).trim());
+ let salário = Number(prompt(`Informe seu salário:`).trim());
+ let sexo = prompt(`F ou M?`);
+ let EstadoCivil = prompt(`S, C, V, D?`).trim();
 
     //Processamento
-
-
+while (nome.length < 4) {
+    alert(`Nome incorreto!`)
+    nome = prompt(`Informe seu nome (com mais de 3 caracteres):`).trim();
+}
+while (Idade < 0 || Idade >= 150) {
+    alert(`Sua idade está incorreta!`)
+    Idade = Number(prompt(`Informe sua idade:`).trim());
+}
+while (salário <= 0) {
+    alert(`Seu salário está inválido!`)
+salário = Number(prompt(`Informe seu salário:`).trim());
+}
+while (sexo != "f" || sexo != "m") {
+    alert(`Sexo inválido!`)
+    sexo = prompt(`F ou M?`).trim();
+}
+while (EstadoCivil != 'S' || EstadoCivil != 'C' || EstadoCivil !=  'V' || EstadoCivil !=  'D' || 'ds') {
+    alert(`Este estado civil é incorreto!`)
+    EstadoCivil = prompt(`S, C, V, D?`).trim();
+}
     //Saída
 
 </script>
