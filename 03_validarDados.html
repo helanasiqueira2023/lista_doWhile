@@ -20,23 +20,23 @@
     //Processamento
 while (nome.length < 4) {
     alert(`Nome incorreto!`)
-    nome = prompt(`Informe seu nome (com mais de 3 caracteres):`).trim();
+    nome = prompt(`Informe seu nome (com mais de 3 caracteres):`).trim().toUpperCase();
 }
-while (Idade < 0 || Idade >= 150) {
+while (Idade < 0 || Idade > 150 || isNaN(Idade)) {
     alert(`Sua idade está incorreta!`)
-    Idade = Number(prompt(`Informe sua idade:`).trim());
+    Idade = Number(prompt(`Informe sua idade:`).trim().toUpperCase());
 }
-while (salário <= 0) {
+while (salário < 0) {
     alert(`Seu salário está inválido!`)
-salário = Number(prompt(`Informe seu salário:`).trim());
+salário = Number(prompt(`Informe seu salário:`).trim().toUpperCase());
 }
-while (sexo != "f" || sexo != "m") {
+while (sexo != "F" && sexo != "M") {
     alert(`Sexo inválido!`)
-    sexo = prompt(`F ou M?`).trim();
+    sexo = prompt(`F ou M?`).trim().toUpperCase();
 }
-while (EstadoCivil != 'S' || EstadoCivil != 'C' || EstadoCivil !=  'V' || EstadoCivil !=  'D' || 'ds') {
+while (EstadoCivil != 'S' && EstadoCivil != 'C' && EstadoCivil !=  'V' && EstadoCivil !=  'D' && 'ds') {
     alert(`Este estado civil é incorreto!`)
-    EstadoCivil = prompt(`S, C, V, D?`).trim();
+    EstadoCivil = prompt(`S, C, V, D?`).trim().toUpperCase();
 }
     //Saída
 

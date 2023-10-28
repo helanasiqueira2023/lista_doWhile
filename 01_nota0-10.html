@@ -10,10 +10,9 @@
 const nota = Number(prompt(`Informe uma nota entre zero e dez:`));
 
     //Processamento
-while (nota <= 0 || nota > 10 || isNaN(nota)) {
-   alert(`Valor válido!`);
-   nota = Number(prompt(`Informe novamente uma nota entre 0 e dez:`));
-   alert(`Valor inválido!`)
+while (nota < 0 || nota > 10 || isNaN(nota)) {
+   alert(`Valor inválido!`);
+   nota = Number(prompt(`Informe novamente uma nota entre 0 e 10:`))
 }
     //Saída
 </script>
